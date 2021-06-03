@@ -1,0 +1,7 @@
+.content{
+    padding:0 18px;
+    background-color:black;
+    max-height: 5%;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}

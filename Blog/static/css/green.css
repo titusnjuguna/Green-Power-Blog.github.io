@@ -1,0 +1,17 @@
+.Active,.collapsible:hover{ background-color:white;}
+#konde{
+	padding:10 25px;
+	display: block;
+	overflow: hidden;
+	}
+
+.collapsible:after{
+	content: 'Read More';
+	color : whitesmoke;
+	float: right;
+	margin-left: 3px;
+
+}
+.active:after{
+	content:'Minimize'
+}

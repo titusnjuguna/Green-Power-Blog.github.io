@@ -1,0 +1,20 @@
+{% block content %}
+{% if user.is_authenticated %}
+<body style="background-color:#4d4d4d;">
+<div class="container" >
+<h1> Add Post </h1>
+</br>
+<div class= "form-group" >
+    <form method = "POST"  enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.media}}
+        {{form.as_p}}
+      <button class = "btn btn-secondary">POST </button>
+    </form>
+</div>
+{% else %}
+you are not allowed here
+{% endif %}
+</div>
+</body>
+{% endblock content %}
